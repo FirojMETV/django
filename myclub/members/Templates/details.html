@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{% extends 'master.html' %}
+{% block title  %}
+details about {{mymembers.firstname}} {{mymembers.lastname}}
+{% endblock %}
+<body>
+    {% block content %}
+    <div class="mycard">
+    <h1>{{mymembers.firstname}} {{mymembers.lastname}}</h1>
+
+    <p>Phone numbers : {{ mymembers.phone}}</p>
+    <p>Members since  : {{ mymembers.joined_Date}}</p>
+</div>
+    <p>Back to <a href="/members">Members</a></p>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'global.css' %}">
+
+</head>
+<body>
+    {% include 'header.html' % }
+  <h1>Welcome to my webpage</h1>
+  {% for x in x %}
+  <h1 >{{ x }}</h1>
+  <p>In myfirst.css you can see what the stylesheet looks like.</p>
+
+{% endfor %}
+   {% include 'footer.html' %}
+</body>
+</html>
+
+
+
+
+
+
+
+
